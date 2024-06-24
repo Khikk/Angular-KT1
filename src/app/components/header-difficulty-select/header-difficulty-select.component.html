@@ -1,0 +1,14 @@
+
+
+<ul class="header-choose">
+  @for(difficulty of recipesListService.difficulties; track $index) {
+    <li>
+      <a 
+        [class]="difficulty.toLowerCase() === recipesListService.difficulties[recipesListService.currentDifficulty].toLowerCase() ? 'active' : ''" 
+        [routerLink]="['/', recipesListService.categories[recipesListService.currentCategory].toLowerCase(), difficulty.toLowerCase()]" (click)="recipesListService.currentDifficulty = $index"
+      >{{difficulty}}
+      </a>
+    </li>
+  }
+
+</ul>

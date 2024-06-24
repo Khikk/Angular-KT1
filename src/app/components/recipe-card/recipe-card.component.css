@@ -1,0 +1,108 @@
+.recipe-summary {
+  width: 625px;
+  height: 470px;
+  border: 6px solid white;
+  border-radius: 19px;
+  position: relative;
+  padding: 12px 0 35px 18px;
+  box-shadow: 0px 2.2px 5.5px 0px #00000026;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+h2, h3 {
+  font-family: 'Arima', cursive;
+  font-size: 24px; 
+  font-weight: 800;
+  line-height: 40px;
+  text-align: left;
+  color: #404040; 
+}
+
+h3 {
+  font-size: 20px;
+  color: #969696; /* Different color for h3 */
+  line-height: 32px;
+}
+
+.recipe-ingredients-list {
+  width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.recipe-ingredient {
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 13px;
+  text-align: left;
+  padding: 4px 8px 8px 8px;
+  border: 1px solid white;
+  border-radius: 7px;
+  box-shadow: 0px 2.2px 5.5px 0px #00000026;
+}
+
+.recipe-image {
+  width: 319px;
+  height: 319px;
+  top: 70px;
+  right: -150px;
+  object-fit: cover;
+  border: 6px solid white;
+  border-radius: 19px;
+  position: absolute;
+  box-shadow: 0px 2.16px 5.4px 0px #00000026;
+}
+
+.recipe-info {
+  display: flex;
+  gap: 30px;
+}
+
+.recipe-info-block {
+  border: 3px solid white;
+  width: fit-content;
+  border-radius: 7px;
+  height: 82px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 2px;
+}
+
+.recipe-info-value {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 23px;
+  text-align: left;
+}
+
+.recipe-info-description {
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 15.5px;
+  text-align: center;
+  color: #969696;
+}
+
+button {
+  width: 125px;
+  height: 25px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 9.5px;
+  font-weight: 500;
+  line-height: 9.5px;
+  text-align: center;
+  color: white;
+  background-color: #408EBA;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+}

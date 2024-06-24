@@ -1,0 +1,15 @@
+.recipe-scroll{
+  display: flex;
+  gap: 215px;
+  overflow-x: auto;
+  width: calc(100% - 98px);
+}
+
+.leftbar-select-btn {
+  display: flex;
+  gap: 30px;
+}
+.content-meal {
+  width: 100%;
+  position: relative;
+}

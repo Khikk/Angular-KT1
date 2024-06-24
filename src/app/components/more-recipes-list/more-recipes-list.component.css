@@ -1,0 +1,62 @@
+.more-recipes {
+  margin-top: 30px;
+  margin-left: 67px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+h2 {
+font-family: 'Arima', cursive;
+font-size: 23.98px;
+font-weight: 800;
+line-height: 39.16px;
+text-align: left;
+}
+
+.more-recipes_list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 49px;
+  margin-top: 60px;
+}
+
+.more-recipes_item {
+  width: 142px;
+  height: 135px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid white;
+  border-radius: 7px;
+  box-shadow: 0px 2.16px 5.4px 0px #00000026;
+  padding-bottom: 16px;
+  cursor: pointer;
+}
+.more-recipes_image {
+  width: 94px;
+  height: 95px;
+  object-fit: cover;
+  margin-top: -45px;
+  border: 3px solid white;
+  border-radius: 7px;
+}
+
+.more-recipes_title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15.11px;
+  font-weight: 500;
+  line-height: 17.7px;
+  text-align: center;
+}
+
+.more-recipes_descr {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12.95px;
+  font-weight: 500;
+  line-height: 15.17px;
+  text-align: center;
+  color: #969696;
+
+}

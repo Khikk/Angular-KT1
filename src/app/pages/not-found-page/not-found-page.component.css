@@ -1,0 +1,31 @@
+.nfp_wrpper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 600px;
+}
+
+.nfp_wrpper > h1 {
+    color: rgb(119, 2, 2);
+    font-size: 52px;
+}
+
+.nfp_wrpper > a {
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #757474;
+    margin-top: 40px;
+    text-decoration: none;
+}
+
+.nfp_wrpper > p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #969696;
+    margin-top: 10px;
+}
+
+

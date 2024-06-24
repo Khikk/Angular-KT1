@@ -1,0 +1,42 @@
+<nav class="recipe-nav">
+  <a (click)="back()" class="recipe-nav__back">Back</a>
+  <a routerLink="/" class="recipe-nav__home">Home</a>
+</nav>
+@if (recipe) {
+  <main class="recipe">
+    <h2 class="recipe__title">{{recipe.name}}</h2>
+    <section class="recipe__content">
+      <section class="recipe__details">
+        <h3 class="recipe__header">Instructions</h3>
+        <div class="recipe__steps">
+          @for (step of recipe.instructions; track $index) {
+            <div class="recipe__step">
+              {{$index + 1}}. {{step}}
+            </div>
+          }
+        </div>
+        <h3 class="recipe__header">Information</h3>
+        <div class="recipe__additional-info">
+          <div class="recipe__info-item">
+            <h5 class="recipe__info-item-value">{{recipe.caloriesPerServing}}</h5>
+            <p class="recipe__info-item-description">Calories</p>
+          </div>
+          <div class="recipe__info-item">
+            <h5 class="recipe__info-item-value">{{recipe.rating}}</h5>
+            <p class="recipe__info-item-description">Rating</p>
+          </div>
+          <div class="recipe__info-item">
+            <h5 class="recipe__info-item-value">{{recipe.prepTimeMinutes}}</h5>
+            <p class="recipe__info-item-description">Prep time <br> minutes</p>
+          </div>
+          <div class="recipe__info-item">
+            <h5 class="recipe__info-item-value">{{recipe.cookTimeMinutes}}</h5>
+            <p class="recipe__info-item-description">Cook time <br>minutes</p>
+          </div>
+        </div>
+      </section>
+      <img src="{{recipe.image}}" alt="recipe" class="recipe__image">
+    </section>
+  </main>
+ 
+}

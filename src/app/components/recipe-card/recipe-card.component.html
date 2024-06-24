@@ -1,0 +1,28 @@
+<div class="recipe-summary">
+  <h2>{{recipe.name}}</h2>
+  <h3>Ingredients</h3>
+  <div class="recipe-ingredients-list">
+    <p class="recipe-ingredient" *ngFor="let ingredient of recipe.ingredients">{{ingredient}}</p>
+  </div>
+  <h3>Information</h3>
+  <div class="recipe-info">
+    <div class="recipe-info-block">
+      <h5 class="recipe-info-value">{{recipe.caloriesPerServing}}</h5>
+      <p class="recipe-info-description">Calories</p>
+    </div>
+    <div class="recipe-info-block">
+      <h5 class="recipe-info-value">{{recipe.rating}}</h5>
+      <p class="recipe-info-description">Rating</p>
+    </div>
+    <div class="recipe-info-block">
+      <h5 class="recipe-info-value">{{recipe.prepTimeMinutes}}</h5>
+      <p class="recipe-info-description">Prep time <br> minutes</p>
+    </div>
+    <div class="recipe-info-block">
+      <h5 class="recipe-info-value">{{recipe.cookTimeMinutes}}</h5>
+      <p class="recipe-info-description">Cook time <br>minutes</p>
+    </div>
+  </div>
+  <img src="{{recipe.image}}" alt="" class="recipe-image">
+  <button [routerLink]="['/recipe', recipe.id]">Recipe</button>
+</div>

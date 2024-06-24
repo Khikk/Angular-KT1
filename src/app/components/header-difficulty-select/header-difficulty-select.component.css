@@ -1,0 +1,21 @@
+.header-choose {
+  display: flex;
+  gap: 30px;
+  height: 70px;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21px;
+  text-align: left;
+  color: rgba(150, 150, 150, 1);
+}
+
+a.active {
+  color: rgba(64, 64, 64, 1)
+
+}

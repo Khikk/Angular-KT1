@@ -1,0 +1,13 @@
+<div class="leftbar-select-btn">
+  <app-leftbar-select></app-leftbar-select>
+  <div class="content-meal">
+    <app-header-difficulty-select></app-header-difficulty-select>
+    <section class="recipe-scroll">
+      @for (recipe of recipesListService.displayedRecipesList; track recipe.id) {
+        <app-recipe-card
+        [recipe]="recipe"></app-recipe-card>
+      }
+    </section>
+  </div>
+  </div>
+  

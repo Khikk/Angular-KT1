@@ -1,0 +1,43 @@
+.leftbar-selector {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  width: 30px;
+  margin-top: 110px;
+}
+
+.leftbar-selector__item {
+  list-style: none;
+  transform: rotate(271deg);
+}
+a {
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 17.53px;
+  font-weight: 500;
+  line-height: 20.54px;
+  text-align: left;
+  color: #969696;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+a.active{
+  color: #404040;
+
+}
+
+
+.link_mark {
+  width: 10px;
+  height: 10px;
+  background: #408EBA;
+  border-radius: 100px;
+  opacity: 0;
+  align-self: center;
+}
+
+.link_mark.active {
+  opacity: 1;
+}
